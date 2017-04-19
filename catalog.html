@@ -8,12 +8,12 @@
     <header class="main-header">
       <div class="main-header-top">
         <span class="logo">Техномарт</span>
-        <span class="search">Поиск:</span>
-        <span class="favorites">Закладки: 0</span>
-        <span class="basket">Корзина: 10</span>
-        <span class="checkout">Оформить заказ</span>
+        <span class="search">(инпут текст в форме)Поиск:</span>
+        <span class="favorites">(ссылка)Закладки: 0</span>
+        <span class="basket">(ссылка)Корзина: 10</span>
+        <span class="checkout">(ссылка)Оформить заказ</span>
       </div>
-      <div class="main-header-middle">
+      <div class="main-header-middle">(контейнер)
         <em class="tagline">Интернет-магазин строительных материалов и инструментов для ремонта</em>
         <span class="phone">+7 (812) 555-05-55</span>
         <span class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
@@ -55,10 +55,10 @@
         <a href="#">Главная</a>
         <a href="#">Каталог</a>
         <a href="#">Инструмент</a>
-        <a href="#">Перфораторы</a>
+        <span (либо убрать хреф)>Перфораторы</a>
       </div>
       <h1>Перфораторы</h1>
-      <section class="catalog-filters">
+      <section class="catalog-filters">+добавить общую обертку для выравнивания
         <span>Фильтр:</span>
         <div class="price-slider">
           <h3>Цена:</h3>
@@ -101,15 +101,15 @@
       <section class="catalog-items">
         <div class="catalog-sort">
           <span>Сортировка:</span>
-          <a href="#">По цене</a>
+          <a href="#" class="active">По цене</a>
           <a href="#">По типу</a>
           <a href="#">По функционалу</a>
-          <button class="sort" type="button">По возрастанию</button>
+          !<a>< class="sort" type="button">По возрастанию</button>
           <button class="sort" type="button">По убыванию</button>
         </div>
-        <div class="container">
+        (убрать div поставить product-item)<div class="container">
           <article class="item">
-            <p class="name">
+            <a class="name">
               Перфоратор BOSCH<br>
               BFG 3000
             </p>
@@ -126,9 +126,10 @@
           </article>
           <article class="item new-item">
             <div class="item-hover">
-              <a href="#" class="btn-hover">Купить</a>
-              <a href="#" class="btn-hover">В закладки</a>
+              <a href="#" class="btn-cart">Купить</a>
+              <a href="#" class="btn-feature">В закладки</a>
             </div>
+            +img
             <p class="name">
               Перфоратор BOSCH<br>
               BFG 2000
@@ -181,8 +182,8 @@
             </p>
             <p class="price-now">12500 Р.</p>
           </article>
-          <div class="pages">
-            <a href="#" class="btn-catalog">1</a>
+          <div class="pagination">
+            <span href="#" class="btn-pagination-active">1</a>
             <a href="#" class="btn-catalog">2</a>
             <a href="#" class="btn-catalog">3</a>
             <a href="#" class="btn-catalog">Следующая</a>
