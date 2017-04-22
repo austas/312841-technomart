@@ -6,19 +6,51 @@ body {
   line-height: 24px;
 }
 
-h1, h2 {
+h1 {
   font-family: Cuprum;
   font-size: 30px;
   text-transform: uppercase;
 }
 
+h2 {
+  font-family: Cuprum;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.category {
+  width: 300px;
+  height: 123px;
+  margin: 20px auto;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  background-repeat: no-repeat;
+}
+
+.category a {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
 .container {
-  width: 1200px;
+  width: 940px;
+}
+
+.delivery {
+  background-color: #f6b22d;
 }
 
 .header-title {
   color: #32425c;
   line-height: 30px;
+}
+
+.instruments {
+  background-color: #4aafde;
 }
 
 .logo {
@@ -28,11 +60,49 @@ h1, h2 {
   background-color: #ee3643;
 }
 
-.logo-highlight:hover {
+.logo a img:hover {
   background-color: #ca2c37;
+  box-shadow: inset 0 -5px 0 rgba(0, 0, 0, 0.24);
 }
 
-.logo img {
-  margin-left: 55px;
-  margin-top: 13px;
+.materials {
+  background-color: #f6b22d;
+  background-image: url(../img/icons/sprite-big-icons.png);
+  background-position: 0 0;
+  width: 44px;
+  height: 65px;
+  margin-top: 31px;
+  margin-right: 43px;
+}
+
+.footer-logo {
+  height: 68px;
+}
+
+.main-footer-bottom {
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 18px;
+  background-color: #33445a;
+}
+
+.technics {
+  background-color: #cc79d1;
+}
+
+.sales {
+  background-color: #85d179;
+}
+
+.slide {
+  width: 620px;
+  height: 266px;
+}
+
+.slide:first-child {
+  background-image: url(../img/slider.jpg);
+}
+
+.slide:last-child {
+  background-image: url(../img/second-slider.jpg);
 }
