@@ -5,22 +5,10 @@ html, body {
 
 body {
   color: #000000;
-  font-family: "PT Sans";
+  font-family: "PT Sans", Candara, sans-serif;
   font-size: 13px;
   font-weight: 400;
   line-height: 24px;
-}
-
-h1 {
-  font-family: Cuprum;
-  font-size: 30px;
-  text-transform: uppercase;
-}
-
-h2 {
-  font-family: Cuprum;
-  font-size: 30px;
-  text-transform: uppercase;
 }
 
 .category {
@@ -85,6 +73,15 @@ h2 {
   width: 150px;
 }
 
+.feature-header-title {
+  font-family: Cuprum, Candara, sans-serif;
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #000000;
+  font-weight: 400;
+  line-height: 24px;
+}
+
 .footer-logo {
   height: 68px;
 }
@@ -94,12 +91,19 @@ h2 {
 }
 
 .header-title {
+  font-family: Cuprum, Candara, sans-serif;
+  font-size: 30px;
+  text-transform: uppercase;
   color: #32425c;
   line-height: 30px;
 }
 
 .instruments {
   background-color: #4aafde;
+}
+
+.item-hover {
+  display: none;
 }
 
 .logo {
@@ -147,7 +151,7 @@ h2 {
 
 .main-header-top a {
   color: #ffffff;
-  font-family: Cuprum;
+  font-family: Cuprum, Candara, sans-serif;
   font-size: 17px;
   font-weight: 400;
   line-height: 18px;
@@ -164,7 +168,7 @@ h2 {
 
 .main-navigation a {
   color: #ffffff;
-  font-family: Cuprum;
+  font-family: Cuprum, Candara, sans-serif;
   font-size: 17px;
   font-weight: 400;
   line-height: 17px;
@@ -182,6 +186,26 @@ h2 {
   display: inline-block;
 }
 
+.main-popular-header {
+  display: block;
+  padding-top: 12px;
+  height: 89px;
+  background-color: #f7f3ec;
+}
+
+.main-popular-header a {
+  float: right;
+  display: block;
+  width: 253px;
+  height: 38px;
+  background-color: #ee3643;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.main-popular-items {
+}
+
 .phone {
   width: 270px;
   height: 45px;
@@ -195,7 +219,7 @@ h2 {
   width: 196px;
   height: 60px;
   color: #ee3643;
-  font-family: Cuprum;
+  font-family: Cuprum, Candara, sans-serif;
   font-size: 16px;
   font-style: italic;
   line-height: 23px;
