@@ -21,12 +21,10 @@ h2 {
 .category {
   width: 300px;
   height: 123px;
-  margin: 20px auto;
   color: #ffffff;
   font-size: 24px;
   font-weight: 700;
   line-height: 30px;
-  background-repeat: no-repeat;
 }
 
 .category a {
@@ -67,12 +65,6 @@ h2 {
 
 .materials {
   background-color: #f6b22d;
-  background-image: url(../img/icons/sprite-big-icons.png);
-  background-position: 0 0;
-  width: 44px;
-  height: 65px;
-  margin-top: 31px;
-  margin-right: 43px;
 }
 
 .footer-logo {
