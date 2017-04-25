@@ -27,6 +27,7 @@ a {
 }
 
 .address {
+  float: left;
   width: 322px;
   color: #f1f5f7;
   font-family: Cuprum, Candara, sans-serif;
@@ -36,7 +37,7 @@ a {
 }
 
 .breadcrumbs {
-  margin-top: 25px;
+  margin-top: 20px;
   line-height: 18px;
   text-transform: uppercase;
 }
@@ -88,9 +89,7 @@ a {
 
 .catalog-header {
   width: 910px;
-  height: 57px;
-  padding-top: 32px;
-  padding-left: 30px;
+  padding: 30px;
   background-color: #f2f6f8;
 }
 
@@ -109,7 +108,7 @@ a {
   margin-bottom: 20px;
 }
 
-.catalog-items article:nth-child(3n+3) {
+.catalog-items article:nth-child(3n) {
   margin-right: 0;
 }
 
@@ -175,7 +174,7 @@ a {
 .footer-copyright {
   float: left;
   margin-top: 39px;
-  width: 310px;
+  width: 300px;
 }
 
 .footer-logo {
@@ -183,7 +182,7 @@ a {
   width: 220px;
   height: 68px;
   box-shadow: inset 0 -5px 0 rgba(0, 0, 0, 0.24);
-  background-color: #ee3643;
+  background-color: #ef3341;
 }
 
 .footer-logo a img:hover {
@@ -193,23 +192,26 @@ a {
 
 .footer-social {
   float: left;
-  margin-left: 80px;
+  width: 150px;
+  margin-left: 90px;
   margin-top: 39px;
 }
 
 .footer-mailto {
   float: left;
-  margin-left: 65px;
+  width: 160px;
+  margin-left: 100px;
   margin-top: 24px;
 }
 
 .footer-credits {
   float: right;
+  margin-right: 15px;
   margin-top: 24px;
 }
 
 .header-middle {
-  margin-bottom: 44px;
+  margin-bottom: 40px;
 }
 
 .header-title {
@@ -234,7 +236,7 @@ a {
   width: 220px;
   height: 47px;
   box-shadow: inset 0 -5px 0 rgba(0, 0, 0, 0.24);
-  background-color: #ee3643;
+  background-color: #ef3341;
 }
 
 .logo a img:hover {
@@ -275,7 +277,7 @@ a {
   font-family: Cuprum, Candara, sans-serif;
   font-size: 16px;
   line-height: 18px;
-  background-color: #33445a;
+  background-color: #293449;
 }
 
 .main-footer-bottom a {
@@ -284,7 +286,7 @@ a {
 
 .main-footer-top {
   height: 193px;
-  background-color: #3b546f;
+  background-color: #2f405c;
 }
 
 .main-footer-top a {
@@ -314,8 +316,8 @@ a {
 
 .main-header-top {
   height: 42px;
-  background-color: #33445a;
-  margin-bottom: 46px;
+  background-color: #293449;
+  margin-bottom: 50px;
 }
 
 .main-header-top a {
@@ -330,8 +332,8 @@ a {
   float: left;
   width: 940px;
   height: 60px;
-  box-shadow: inset 0 -5px 0 #293449;
-  background-color: #32425c;
+  box-shadow: inset 0 -5px 0 #253148;
+  background-color: #2f405c;
   margin-bottom: 60px;
 }
 
@@ -385,7 +387,6 @@ a {
 
 .phone {
   width: 270px;
-  height: 45px;
   border: 3px solid #ffffff;
 }
 
@@ -423,10 +424,9 @@ a {
 
 .tagline {
   float: left;
-  margin-left: 43px;
-  margin-right: 71px;
-  width: 196px;
-  height: 60px;
+  margin-left: 53px;
+  margin-right: 20px;
+  width: 247px;
   color: #ee3643;
   font-family: Cuprum, Candara, sans-serif;
   font-size: 16px;
