@@ -22,6 +22,15 @@ a {
   height: 368px;
 }
 
+.about-us ul {
+	margin-bottom: 40px;
+}
+
+.about-us .btn {
+	display: block;
+	width: 200px;
+}
+
 .about-category {
   height: 261px;
   background-color: #f3f7f9;
@@ -56,6 +65,14 @@ a {
   border-radius: 5px;
 }
 
+.btn:hover {
+	background-color: #cb2834; !important
+}
+
+.btn:active {
+	background-color: #bb222f; !important
+}
+
 .category {
   float: left;
   position: relative;
@@ -86,6 +103,14 @@ a {
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
+}
+
+.category-btn:hover {
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+.category-btn:active {
+	background-color: rgba(0, 0, 0, 0.3);
 }
 
 .category:nth-child(n+3) {
@@ -213,8 +238,32 @@ a {
   height: 368px;
 }
 
+.contacts .btn {
+	display: block;
+	width: 281px;
+}
+
+.contacts .map {
+	margin-bottom: 40px;
+}
+
 .delivery {
   background-color: #ffc047;
+}
+
+.delivery-company li {
+	list-style: none;
+  font-family: Cuprum, Candara, sans-serif;
+	font-size: 18px;
+	padding-bottom: 15px;
+}
+
+.delivery-company li:first-child {
+	padding-top: 4px;
+}
+
+.delivery-company li:last-child {
+	padding-bottom: 0;
 }
 
 .delivery::before {
@@ -303,13 +352,60 @@ a {
 
 .footer-social {
   float: left;
+	position: relative;
   width: 150px;
   margin-left: 90px;
-  margin-top: 39px;
+  margin-top: 30px;
+	text-align: center;
+}
+
+.social-btn {
+	display: inline-block;
+	font-size: 0;
+	margin: 0 2px;
+	width: 41px;
+  height: 41px;
+	background-color: #212a3a;
+	border-radius: 20px;
+}
+
+.social-btn::before {
+	position: absolute;
+	content: "";
+	background: url("../img/icons/sprite-small-icons.png") no-repeat center;
+}
+
+.social-btn-vk::before {
+	width: 20px;
+	height: 12px;
+	top: 20px;
+	left: 15px;
+	background-position: -155px 0;
+}
+
+.social-btn-fb::before {
+	width: 10px;
+	height: 18px;
+	top: 15px;
+	left: 70px;
+	background-position: -180px 0;
+}
+
+.social-btn-ig::before {
+	width: 17px;
+	height: 17px;
+	top: 17px;
+	left: 115px;
+	background-position: -193px 0;
+}
+
+.social-btn:hover {
+	background-color: #ee3643;
 }
 
 .footer-mailto {
   float: left;
+	display: block;
   width: 160px;
   margin-left: 100px;
   margin-top: 24px;
@@ -319,6 +415,23 @@ a {
   float: right;
   margin-right: 15px;
   margin-top: 24px;
+}
+
+.footer-mailto a,
+.footer-credits a {
+	display: block;
+	margin-top: -16px;
+}
+
+.footer-mailto a:hover,
+.footer-credits a:hover {
+	text-decoration: underline;
+}
+
+.footer-mailto a:active,
+.footer-credits a:active {
+	text-decoration: none;
+	color: #ee3643;
 }
 
 .header-middle {
@@ -439,14 +552,37 @@ a {
 .main-footer-top li {
   display: inline-block;
   list-style: none;
+	margin-right: 60px;
 }
 
 .main-footer-top nav {
   float: right;
 }
 
+.footer-navigation-top li {
+	margin-top: 20px;
+}
+
+.footer-navigation-top li:last-child,
+.footer-navigation-bottom li:last-child {
+	margin-right: 0;
+}
+
 .footer-navigation-bottom a {
   color: #ffd180;
+}
+
+.main-footer-top a:hover {
+	text-decoration: underline;
+}
+
+.main-footer-top a:active {
+	opacity: 0.5;
+	text-decoration: none;
+}
+
+.footer-navigation-bottom {
+	margin-top: -60px;
 }
 
 .main-header {
@@ -588,6 +724,10 @@ a {
   background-color: #ffffff;
 }
 
+.product-item:hover {
+	box-shadow: 0 10px 25px rgba(41, 52, 73, 0.5);
+}
+
 .product-item:last-child {
   margin-right: 0;
 }
@@ -638,6 +778,7 @@ a {
 .item-hover a {
   position: absolute;
   padding: 10px;
+	padding-left: 13px;
   color: #ffffff;
   font-size: 14px;
   font-weight: 400;
@@ -651,7 +792,18 @@ a {
   width: 120px;
   height: 25px;
   box-shadow: inset 0 -3px 0 #367315;
-  background-color: #63a63e;
+	background-color: #63a63e;
+}
+
+.btn-cart::before {
+	position: absolute;
+	content: "";
+	left: 12px;
+	top: 12px;
+	width: 17px;
+	height: 16px;
+	background: url("../img/icons/sprite-small-icons.png") no-repeat;
+	opacity: 0.3;
 }
 
 .btn-feature {
@@ -661,6 +813,26 @@ a {
   height: 22px;
   border: 3px solid #63a63e;
   background-color: #ffffff;
+}
+
+.btn-cart:hover {
+	background-color: #5fbc29;
+}
+
+.btn-cart:hover::before {
+	opacity: 1;
+}
+
+.btn-cart:active {
+	background-color: #508631;
+}
+
+.btn-feature:hover {
+	border: 3px solid #32425c;
+}
+
+.btn-feature:active {
+	opacity: 0.3;
 }
 
 .item-hover a:last-child {
@@ -683,6 +855,14 @@ a {
 
 .popular-brand:nth-child(4), .popular-brand:last-child {
   margin-right: 0;
+}
+
+.popular-brand:hover {
+	box-shadow: 0 10px 25px rgba(41, 52, 73, 0.5);
+}
+
+.popular-brand:active {
+	opacity: 0.3;
 }
 
 .tagline {
