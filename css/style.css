@@ -29,7 +29,7 @@ a {
 
 .address {
   float: left;
-  width: 322px;
+  width: 380px;
   color: #f1f5f7;
   font-family: Cuprum, Candara, sans-serif;
   font-size: 18px;
@@ -81,12 +81,11 @@ a {
 }
 
 .category-btn {
-  background-color: #000000;
   color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.1);
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
-  opacity: 0.1;
 }
 
 .category:nth-child(n+3) {
@@ -205,7 +204,7 @@ a {
 
 .container {
   width: 940px;
-  margin: 0 130px;
+  margin: 0 auto;
 }
 
 .contacts {
@@ -215,7 +214,7 @@ a {
 }
 
 .delivery {
-  background-color: #f6b22d;
+  background-color: #ffc047;
 }
 
 .delivery::before {
@@ -337,7 +336,7 @@ a {
 }
 
 .instruments {
-  background-color: #4aafde;
+  background-color: #3bbce3;
 }
 
 .instruments::before {
@@ -366,7 +365,7 @@ a {
 }
 
 .materials {
-  background-color: #f6b22d;
+  background-color: #ffc047;
 }
 
 .materials::before {
@@ -525,7 +524,7 @@ a {
 
 .main-popular-header a {
   float: right;
-  width: 253px;
+  width: 233px;
 }
 
 .main-popular-header .btn {
@@ -618,11 +617,11 @@ a {
 }
 
 .product-item .price-now {
-  display: block;
+  position: absolute;
   width: 141px;
   height: 38px;
-  margin-left: 42px;
-  margin-top: -5px;
+  left: 39px;
+  bottom: -5px;
   padding-top: 10px;
   background: url("../img/icons/price-label.png") no-repeat;
   color: #ffffff;
@@ -647,7 +646,7 @@ a {
 }
 
 .btn-cart {
-  left: 42px;
+  left: 39px;
   top: 40px;
   width: 120px;
   height: 25px;
@@ -656,7 +655,7 @@ a {
 }
 
 .btn-feature {
-  left: 42px;
+  left: 39px;
   top: 95px;
   width: 115px;
   height: 22px;
@@ -699,14 +698,24 @@ a {
 
 .top-features {
   float: left;
-  max-height: 285px;
+  position: relative;
+  min-width: 630px;
+  min-height: 285px;
   overflow: hidden;
 }
 
 .top-feature {
   float: left;
-  width: 630px;
-  height: 282px;
+  position: absolute;
+  min-width: 630px;
+  height: 285px;
+}
+
+.top-feature-title {
+  color: #32425c;
+  font-family: Cuprum, Candara, sans-serif;
+  font-size: 36px;
+  text-transform: uppercase;
 }
 
 .top-feature p {
@@ -729,7 +738,7 @@ a {
 }
 
 .technics {
-  background-color: #cc79d1;
+  background-color: #dc91d8;
 }
 
 .technics::before {
@@ -741,7 +750,7 @@ a {
 }
 
 .sales {
-  background-color: #85d179;
+  background-color: #8dd78f;
 }
 
 .sales::before {
@@ -765,7 +774,7 @@ a {
   background: none;
   border: none;
   color: #ffffff;
-  font-family: Cuprum;
+  font-family: Cuprum, Candara, sans-serif;
   font-size: 17px;
   font-weight: 400;
   line-height: 18px;
