@@ -1017,12 +1017,16 @@ input#btn-2 {
   height: 266px;
 }
 
-.slider-controls {
+.arrows {
   cursor: pointer;
   position: relative;
 }
 
-.slider-controls label:first-child:after {
+.arrows label:after {
+  background: url("../img/icons/sprite-slider-arrows.png") no-repeat;
+}
+
+.arrows label:first-child:after {
   position: absolute;
   cursor: pointer;
   content: "";
@@ -1031,10 +1035,10 @@ input#btn-2 {
   top: 114px;
   width: 22px;
   height: 40px;
-  background: url("../img/icons/-icon-left.png") no-repeat;
+  background-position: -5px -5px;
 }
 
-.slider-controls label:last-child:after {
+.arrows label:last-child:after {
   position: absolute;
   cursor: pointer;
   content: "";
@@ -1043,7 +1047,7 @@ input#btn-2 {
   top: 114px;
   width: 22px;
   height: 40px;
-  background: url("../img/icons/-icon-right.png") no-repeat;
+  background-position: -37px -5px;
 }
 
 .slide-title {
