@@ -950,7 +950,7 @@ a {
   position: relative;
   margin-top: 54px;
   min-width: 940px;
-  min-height: 285px;
+  height: 320px;
 }
 
 .top-features input {
@@ -969,7 +969,6 @@ a {
   position: absolute;
   content: "";
   width: 10px;
-  ;
   height: 272px;
   right: 0;
   top: 0;
@@ -980,7 +979,7 @@ a {
 .top-features-slides {
   position: relative;
   max-width: 620px;
-  min-height: 285px;
+  height: 320px;
   overflow: hidden;
   left: 313px;
   top: 0;
@@ -1025,7 +1024,7 @@ a {
   float: left;
   position: absolute;
   min-width: 610px;
-  height: 285px;
+  height: 320px;
   padding: 2px;
 }
 
