@@ -3,7 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт - Каталог</title>
-    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&amp;subset=cyrillic" rel="stylesheet" />
+    <link href="css/normalize.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
   </head>
   <body>
     <header class="main-header">
@@ -14,13 +17,12 @@
               <img src="img/logo/main-logo.png" alt="Логотип компании Техномарт" width="220" height="47" />
             </a>
           </div>
-          <form class="search" action="#" method="post">
-            <label>
-              <input type="text" placeholder="Поиск:" />
-            </label>
+         <form class="main-search" action="#" method="post">
+              <input id="main-search" type="search" placeholder="Поиск:" />
+              <label for="main-search"></label>
           </form>
           <a href="#" class="favorites">Закладки: 0</a>
-          <a href="#" class="cart">Корзина: 10</a>
+          <a href="#" class="cart cart-full">Корзина: 10</a>
           <a href="#" class="checkout">Оформить заказ</a>
         </div>
       </div>
@@ -36,9 +38,9 @@
               <span class="phone">+7 (812) 555-05-55</span>
               <span class="main-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
             </div>
-            <div class="user-block">
+            <div class="user-block-signin">
               <a href="#" class="user-name">Равшан Джамшутович</a>
-              <a href="#" class="btn">Выйти</a>
+              <a href="#" class="user-exit">Выйти</a>
               <div class="user-block-menu">
                 <a href="#">Мои заказы</a>
                 <a href="#">Личный кабинет</a>
