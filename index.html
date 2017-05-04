@@ -15,10 +15,9 @@
           <div class="logo">
             <img src="img/logo/main-logo.png" alt="Логотип компании Техномарт" width="220" height="47" />
           </div>
-          <form class="search" action="#" method="post">
-            <label>
-              <input type="text" placeholder="Поиск:" />
-            </label>
+          <form class="main-search" action="#" method="post">
+              <input id="main-search" type="search" placeholder="Поиск:" />
+              <label for="main-search"></label>
           </form>
           <a href="#" class="favorites">Закладки: 0</a>
           <a href="#" class="cart">Корзина: 0</a>
@@ -89,8 +88,8 @@
             <input type="radio" id="btn-1" name="toggle" checked />
             <input type="radio" id="btn-2" name="toggle" />
             <div class="slider-controls">
-              <label for="btn-1"></label>
-              <label for="btn-2"></label>
+              <label class="slider-btn1" for="btn-1"></label>
+              <label class="slider-btn2" for="btn-2"></label>
             </div>
             <div class="arrows">
               <label for="btn-1"></label>
@@ -213,7 +212,7 @@
       <div class="main-features">
         <div class="container clearfix">
           <h2 class="feature-header-title">Сервисы</h2>
-          <p>
+          <p class="feature-header-text">
             Хороший интернет-магазин отличается от плохого не только ценами!<br />
             Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
           </p>
@@ -222,16 +221,17 @@
             <input type="radio" id="feature-btn2" name="toggle" />
             <input type="radio" id="feature-btn3" name="toggle" />
             <div class="top-features-controls">
-              <label for="feature-btn1"></label>
-              <label for="feature-btn2"></label>
-              <label for="feature-btn3"></label>
+              <label for="feature-btn1">Доставка</label>
+              <label for="feature-btn2">Гарантия</label>
+              <label for="feature-btn3">Кредит</label>
             </div>
             <div class="top-features-slides">
               <div class="top-feature">
                 <div class="top-feature-title">Доставка</div>
                 <p>
-                  Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
-                  Ведь мы неплохо заработаем,
+                  Мы с удовольствием доставим ваш товар прямо<br />
+                  к вашему подъезду совершенно бесплатно!<br />
+                  Ведь мы неплохо заработаем,<br />
                   поднимая его на ваш этаж!
                 </p>
               </div>
