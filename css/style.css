@@ -268,6 +268,7 @@ a {
   padding: 10px;
   padding-left: 15px;
   margin-bottom: 20px;
+  border-radius: 5px;
   background-color: #f7f3ec;
 }
 
@@ -318,8 +319,25 @@ a {
 
 .sort-up::before {
   right: 50px;
+  background-position: -371px 0;
+}
+
+.sort-down:hover::before {
+  opacity: 1;
+}
+
+.sort-up:hover::before {
+  opacity: 1;
+}
+
+.sort-up-active::before {
   opacity: 1;
   background-position: -385px 0;
+}
+
+.sort-down-active::before {
+  opacity: 1;
+  background-position: -360px 0;
 }
 
 a.active {
@@ -455,10 +473,209 @@ a.active {
 .filter-name {
   float: left;
   display: block;
-  width: 190px;
+  width: 195px;
   padding: 10px;
   padding-left: 15px;
+  border-radius: 5px;
   background-color: #f7f3ec;
+}
+
+.filters h3 {
+  color: #000000;
+	margin-bottom: 10px;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.filters {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.filters::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 1px;
+  bottom: -25px;
+  background: #e5e5e5;
+}
+
+.brands-filter {
+	position: relative;
+	margin-top: 40px;
+}
+
+.power-type-filter {
+	position: relative;
+	margin-top: 40px;
+}
+
+.filters:nth-child(3)::after {
+	content: none;
+}
+
+.range-controls {
+  position: relative;
+  margin-bottom: 15px;
+  padding: 39px 20px;
+  border-radius: 5px;
+  background-color: #f7f3ec;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background-color: #d7dcde;
+}
+
+.range-controls .bar {
+  width: 85%;
+  height: 2px;
+  background-color: #00cb75;
+}
+
+.range-controls .toggle {
+  position: absolute;
+  cursor: pointer;
+  left: 0;
+  top: 30px;
+  width: 4px;
+  height: 4px;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  background: #b7b7b7;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+}
+
+.range-controls .toggle:hover {
+	background: #d7d7d7;
+}
+
+.range-controls .min-toggle {
+  left: 20px;
+}
+
+.range-controls .max-toggle {
+  left: 160px;
+}
+
+.price-controls {
+  font-size: 0;
+}
+
+.price-controls label {
+  display: inline-block;
+  text-align: center;
+}
+
+.price-controls input {
+  width: 53px;
+  padding: 10px 20px;
+  font-family: inherit;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: center;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background-color: #f7f3ec;
+}
+
+.price-controls span {
+  margin: 10px;
+  color: #000000;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.brands-filter input {
+	display: none;
+}
+
+.brands-filter label {
+	position: relative;
+	display: block;
+	cursor: pointer;
+	padding: 8px 35px;
+	color: #000000;
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 20px;
+	text-transform: uppercase;
+}
+
+.brands-filter label::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 7px;
+	width: 23px;
+	height: 23px;
+	background: url("../img/icons/sprite-small-icons.png") no-repeat;
+	background-position: -40px 0;
+}
+
+.brands-filter input:checked + label::before {
+	width: 27px;
+	background-position: -65px 0;
+}
+
+.power-type-filter input {
+	display: none;
+}
+
+.power-type-filter label {
+	position: relative;
+	cursor: pointer;
+	display: block;
+	padding: 8px 35px;
+	color: #000000;
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 20px;
+	text-transform: uppercase;
+}
+
+.power-type-filter label::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 6px;
+	width: 25px;
+	height: 25px;
+	background: url("../img/icons/sprite-small-icons.png") no-repeat;
+	background-position: -95px 0;
+}
+
+.power-type-filter input:checked + label::before {
+	background-position: -125px 0;
+}
+
+.submit-btn {
+  display: block;
+	margin-top: 65px;
+  padding: 8px 35px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+  text-transform: uppercase;
+  background-color: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+	border-color: #bdc6ca;
+}
+
+.submit-btn:active {
+	outline: none;
+	border-color: #ee3643;
 }
 
 .feature-header-title {
@@ -909,7 +1126,38 @@ a.active {
 .pagination {
   float: left;
   margin-top: 32px;
-  margin-bottom: 25px;
+  margin-bottom: 35px;
+}
+
+.pagination a {
+	display: inline-block;
+	width: 22px;
+	height: 22px;
+	margin-right: 10px;
+	padding: 8px 8px;
+	border: 1px solid #e5e5e5;
+	border-radius: 3px;
+	background-color: #ffffff;
+	color: #000000;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.pagination a:last-child {
+	width: 120px;
+}
+
+.pagination .active-page {
+	color: #ffffff;
+	background-color: #ee3643;
+}
+
+.pagination a:hover {
+	border-color: #bdc6ca;
+}
+
+.pagination a:active {
+	border-color: #ee3643;
 }
 
 .product-item {
