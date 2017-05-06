@@ -24,12 +24,16 @@ a {
 }
 
 .about-us ul {
-  margin-bottom: 35px;
+  margin-bottom: 34px;
 }
 
 .about-us .btn {
   display: block;
   width: 200px;
+}
+
+.about-us p:nth-child(3) {
+  margin-top: 25px;
 }
 
 .about-category {
@@ -100,29 +104,6 @@ a {
   height: 0;
 }
 
-.btn {
-  font-family: Cuprum, Candara, sans-serif;
-  color: #ffffff;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 18px;
-  text-transform: uppercase;
-  text-align: center;
-  padding: 10px;
-  background-color: #ee3643;
-  border-radius: 5px;
-}
-
-.btn:hover {
-  background-color: #cb2834;
-  !important
-}
-
-.btn:active {
-  background-color: #bb222f;
-  !important
-}
-
 .category {
   float: left;
   position: relative;
@@ -150,6 +131,7 @@ a {
 .category-btn {
   color: #ffffff;
   background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
@@ -173,13 +155,13 @@ a {
 }
 
 .category a {
-  margin-top: -10px;
+  margin-top: -11px;
   display: block;
-  margin-left: 23px;
-  padding-top: 10px;
+  margin-left: 25px;
+  padding-top: 11px;
   text-align: center;
   width: 135px;
-  height: 28px;
+  height: 27px;
   text-transform: uppercase;
   color: #ffffff;
 }
@@ -386,7 +368,8 @@ a.active {
 }
 
 .contacts .map {
-  margin-bottom: 40px;
+  margin-top: 31px;
+  margin-bottom: 32px;
 }
 
 .delivery {
@@ -394,7 +377,7 @@ a.active {
 }
 
 .delivery-company {
-  margin-top: 20px;
+  margin-top: 18px;
 }
 
 .delivery-company li {
@@ -403,7 +386,8 @@ a.active {
   list-style: none;
   font-family: Cuprum, Candara, sans-serif;
   font-size: 18px;
-  padding-bottom: 15px;
+  margin-left: -3px;
+  padding-bottom: 16px;
 }
 
 .delivery-company li:last-child {
@@ -413,8 +397,8 @@ a.active {
 .delivery-company li::before {
   position: absolute;
   content: "";
-  left: -40px;
-  top: 10px;
+  left: -37px;
+  top: 11px;
   width: 25px;
   height: 2px;
   background-color: #fb565a;
@@ -686,10 +670,11 @@ a.active {
   font-weight: 400;
   line-height: 24px;
   padding-top: 68px;
+  margin-bottom: 30px;
 }
 
 .feature-header-text {
-  margin-bottom: -20px;
+  margin-bottom: -25px;
 }
 
 .footer-top {
@@ -698,7 +683,7 @@ a.active {
 
 .footer-copyright {
   float: left;
-  margin-top: 39px;
+  margin-top: 37px;
   width: 300px;
 }
 
@@ -719,7 +704,7 @@ a.active {
   float: left;
   position: relative;
   width: 150px;
-  margin-left: 90px;
+  margin-left: 81px;
   margin-top: 30px;
   text-align: center;
 }
@@ -727,11 +712,10 @@ a.active {
 .social-btn {
   display: inline-block;
   font-size: 0;
-  margin: 0 2px;
   width: 41px;
   height: 41px;
   background-color: #212a3a;
-  border-radius: 20px;
+  border-radius: 50%;
 }
 
 .social-btn::before {
@@ -743,15 +727,15 @@ a.active {
 .social-btn-vk::before {
   width: 20px;
   height: 12px;
-  top: 20px;
-  left: 15px;
+  top: 21px;
+  left: 19px;
   background-position: -155px 0;
 }
 
 .social-btn-fb::before {
   width: 10px;
   height: 18px;
-  top: 15px;
+  top: 16px;
   left: 70px;
   background-position: -180px 0;
 }
@@ -760,7 +744,7 @@ a.active {
   width: 17px;
   height: 17px;
   top: 17px;
-  left: 115px;
+  left: 112px;
   background-position: -193px 0;
 }
 
@@ -772,14 +756,14 @@ a.active {
   float: left;
   display: block;
   width: 160px;
-  margin-left: 100px;
-  margin-top: 24px;
+  margin-left: 110px;
+  margin-top: 21px;
 }
 
 .footer-credits {
   float: right;
-  margin-right: 15px;
-  margin-top: 24px;
+  margin-right: 14px;
+  margin-top: 21px;
 }
 
 .footer-mailto a,
@@ -800,7 +784,7 @@ a.active {
 }
 
 .header-middle {
-  margin-bottom: 38px;
+  margin-bottom: 39px;
 }
 
 .header-title {
@@ -810,6 +794,7 @@ a.active {
   font-size: 30px;
   text-transform: uppercase;
   color: #32425c;
+  font-weight: 400;
   line-height: 30px;
 }
 
@@ -859,7 +844,7 @@ a.active {
 }
 
 .main-about-us h2 {
-  padding-top: 55px;
+  padding-top: 56px;
 }
 
 .main-address {
@@ -917,7 +902,7 @@ a.active {
 .main-footer-top li {
   display: inline-block;
   list-style: none;
-  margin-right: 60px;
+  margin-right: 55px;
 }
 
 .main-footer-top nav {
@@ -925,7 +910,7 @@ a.active {
 }
 
 .footer-navigation-top li {
-  margin-top: 20px;
+  margin-top: 25px;
 }
 
 .footer-navigation-top li:last-child,
@@ -946,8 +931,13 @@ a.active {
   text-decoration: none;
 }
 
+.footer-bottom {
+  margin-top: -7px;
+  margin-left: 3px;
+}
+
 .footer-navigation-bottom {
-  margin-top: -60px;
+  margin-top: -61px;
 }
 
 .main-header {
@@ -983,9 +973,8 @@ a.active {
 
 .main-navigation ul {
   list-style: none;
-  margin: 0;
+  margin: 0 22px;
   padding: 0;
-  margin-left: 20px;
 }
 
 .main-navigation li {
@@ -994,7 +983,7 @@ a.active {
 
 .main-navigation a {
   display: block;
-  padding: 21px 30px;
+  padding: 20px 29px;
   color: #ffffff;
   font-family: Cuprum, Candara, sans-serif;
   font-size: 17px;
@@ -1019,7 +1008,8 @@ a.active {
 .main-popular-header {
   height: 89px;
   margin-bottom: 20px;
-  padding-left: 30px;
+  padding-left: 25px;
+  padding-right: 25px;
   background-color: #f7f3ec;
 }
 
@@ -1030,7 +1020,6 @@ a.active {
 
 .main-popular-header .btn {
   margin-top: 25px;
-  margin-right: 24px;
 }
 
 .main-popular-items {
@@ -1180,7 +1169,7 @@ a.active {
 .product-item a {
   display: block;
   text-align: center;
-  margin-top: 5px;
+  margin-top: 3px;
   color: inherit;
   font-size: 18px;
   font-weight: 700;
@@ -1188,7 +1177,8 @@ a.active {
 }
 
 .product-item p {
-  margin-top: 10px;
+  margin-top: 11px;
+  margin-left: 4px;
   font-size: 17px;
   font-weight: 700;
   line-height: 18px;
@@ -1205,8 +1195,8 @@ a.active {
   position: absolute;
   width: 141px;
   height: 38px;
-  left: 39px;
-  bottom: -5px;
+  left: 37px;
+  bottom: -7px;
   padding-top: 10px;
   background: url("../img/icons/price-label.png") no-repeat;
   color: #ffffff;
@@ -1358,7 +1348,7 @@ a.active {
   max-width: 620px;
   height: 320px;
   overflow: hidden;
-  left: 313px;
+  left: 318px;
   top: 0;
 }
 
@@ -1369,7 +1359,7 @@ a.active {
   height: 34px;
   box-shadow: inset 0 -1px 0 #293449;
   background-color: #2f405c;
-  padding: 14px 23px;
+  padding: 13px 23px;
   color: #ffffff;
   font-family: Cuprum, Candara, sans-serif;
   font-size: 21px;
@@ -1379,6 +1369,10 @@ a.active {
 
 .top-features-controls label:hover {
   background-color: #253148;
+}
+
+.top-feature p {
+  margin-top: 30px;
 }
 
 #feature-btn1:checked~.top-features-controls label:first-child {
@@ -1479,8 +1473,8 @@ a.active {
 .slider-controls label {
   position: absolute;
   cursor: pointer;
-  top: 220px;
-  left: 295px;
+  top: 225px;
+  left: 300px;
   width: 10px;
   height: 10px;
   border-radius: 5px;
@@ -1489,7 +1483,7 @@ a.active {
 }
 
 .slider-controls label:last-child {
-  left: 317px;
+  left: 320px;
 }
 
 .slider-controls::after {
@@ -1497,11 +1491,11 @@ a.active {
   position: absolute;
   cursor: pointer;
   content: "";
-  top: 220px;
-  left: 295px;
-  width: 5px;
-  height: 5px;
-  border-radius: 2px;
+  top: 225px;
+  left: 300px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
   transform: translate(-50%, -50%);
   background: #ff5257;
 }
@@ -1511,7 +1505,7 @@ a.active {
 }
 
 #btn-2:checked~.slider-controls::after {
-  left: 317px;
+  left: 320px;
   z-index: 2;
 }
 
@@ -1579,7 +1573,7 @@ a.active {
   display: block;
   width: 175px;
   margin-left: 25px;
-  margin-top: 90px;
+  margin-top: 96px;
 }
 
 .slide:first-child {
@@ -1814,6 +1808,30 @@ a.active {
 
 #feature-btn3:checked~.top-features-slides .top-feature:nth-child(3) {
   margin-left: 0px;
+}
+
+.btn {
+  font-family: Cuprum, Candara, sans-serif;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 9px;
+  padding-top: 11px;
+  padding-left: 11px;
+  padding-right: 8px;
+  background-color: #ee3643;
+  border-radius: 3px;
+}
+
+.btn:hover {
+  background-color: #cb2834;
+}
+
+.btn:active {
+  background-color: #bb222f;
 }
 
 ::-webkit-input-placeholder {
