@@ -3,7 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт - Каталог</title>
-    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&amp;subset=cyrillic" rel="stylesheet" />
+    <link href="css/normalize.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
   </head>
   <body>
     <header class="main-header">
@@ -14,13 +17,12 @@
               <img src="img/logo/main-logo.png" alt="Логотип компании Техномарт" width="220" height="47" />
             </a>
           </div>
-          <form class="search" action="#" method="post">
-            <label>
-              <input type="text" placeholder="Поиск:" />
-            </label>
+         <form class="main-search" action="#" method="post">
+              <input id="main-search" type="search" placeholder="Поиск:" />
+              <label for="main-search"></label>
           </form>
           <a href="#" class="favorites">Закладки: 0</a>
-          <a href="#" class="cart">Корзина: 10</a>
+          <a href="#" class="cart cart-full">Корзина: 10</a>
           <a href="#" class="checkout">Оформить заказ</a>
         </div>
       </div>
@@ -36,9 +38,9 @@
               <span class="phone">+7 (812) 555-05-55</span>
               <span class="main-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
             </div>
-            <div class="user-block">
+            <div class="user-block-signin">
               <a href="#" class="user-name">Равшан Джамшутович</a>
-              <a href="#" class="btn">Выйти</a>
+              <a href="#" class="user-exit">Выйти</a>
               <div class="user-block-menu">
                 <a href="#">Мои заказы</a>
                 <a href="#">Личный кабинет</a>
@@ -48,13 +50,13 @@
           <nav class="main-navigation clearfix">
             <ul>
               <li>
-                <a href="#">Главная</a>
+                <a href="index.html">Главная</a>
               </li>
               <li>
                 <a href="#">Компания</a>
               </li>
               <li>
-                <a href="#">Каталог</a>
+                <a href="catalog.html">Каталог</a>
               </li>
               <li>
                 <a href="#">Новости</a>
@@ -80,7 +82,7 @@
         <a href="#">Инструмент</a>
         <a>Перфораторы</a>
       </div>
-      <h1 class="catalog-header header-title">Перфораторы</h1>
+      <h1 class="catalog-header">Перфораторы</h1>
       <section class="catalog-headers">
         <span class="filter-name">Фильтр:</span>
         <div class="catalog-sort">
@@ -88,8 +90,8 @@
           <a href="#" class="active">По цене</a>
           <a href="#">По типу</a>
           <a href="#">По функционалу</a>
-          <a href="#" class="sort active">По возрастанию</a>
-          <a href="#" class="sort">По убыванию</a>
+          <a href="#" class="sort sort-up sort-up-active">По возрастанию</a>
+          <a href="#" class="sort sort-down">По убыванию</a>
         </div>
       </section>
       <section class="catalog-filters">
@@ -104,41 +106,36 @@
             	<div class="toggle max-toggle"></div>
             </div>
              <div class="price-controls">
-            	<input class="min-price" type="text" value="0" />
-              <span class="price-range">-</span>
-            	<input class="max-price" type="text" value="30000" />
+            	<label class="min-price"><input class="min-price" type="text" value="0" /></label>
+            	<span>—</span>
+            	<label class="max-price"><input class="max-price" type="text" value="30000" /></label>
             </div>
           </div>
-          <hr />
           <div class="filters">
-            <h3>Производители:</h3>
-            <label>
-              <input type="checkbox" checked /> Bosch
-            </label>
-            <label>
-              <input type="checkbox" /> Интерскол
-            </label>
-            <label>
-              <input type="checkbox" checked /> Makita
-            </label>
-            <label>
-              <input type="checkbox" /> Dewalt
-            </label>
-            <label>
-              <input type="checkbox" /> Hitachi
-            </label>
+          	<div class="brands-filter">
+              <h3>Производители:</h3>
+              <input type="checkbox" id="Bosch" name="brand-filter" checked />
+              <label for="Bosch">Bosch</label>
+              <input type="checkbox" id="Interskol" name="brand-filter" />
+              <label for="Interskol">Интерскол</label>
+              <input type="checkbox" id="Makita" name="brand-filter" checked />
+              <label for="Makita">Makita</label>
+              <input type="checkbox" id="Dewalt" name="brand-filter" />
+              <label for="Dewalt">Dewalt</label>
+              <input type="checkbox" id="Hitachi" name="brand-filter" />
+              <label for="Hitachi">Hitachi</label>
+            </div>
           </div>
-          <hr />
           <div class="filters">
-            <h3>Питание:</h3>
-            <label>
-              <input type="radio" checked /> Аккумуляторные
-            </label>
-            <label>
-              <input type="radio" /> Сетевые
-            </label>
+           	<div class="power-type-filter">
+							<h3>Питание:</h3>
+							<input type="radio" id="Portable" name="power-type-filter" checked />
+							<label for="Portable">Аккумуляторные</label>
+							<input type="radio" id="Network" name="power-type-filter" />
+							<label for="Network">Сетевые</label>
+          	</div>
           </div>
-          <input type="submit" value="Показать" />
+          <input class="submit-btn" type="submit" value="Показать" disabled/>
         </form>
       </section>
       <section class="catalog-items">
@@ -257,7 +254,7 @@
           <p class="price-now">12500 Р.</p>
         </article>
         <div class="pagination">
-          <a class="btn-pagination-active">1</a>
+          <a class="btn-catalog active-page">1</a>
           <a href="#" class="btn-catalog">2</a>
           <a href="#" class="btn-catalog">3</a>
           <a href="#" class="btn-catalog">Следующая</a>
@@ -291,7 +288,7 @@
                   <a href="#">Новости</a>
                 </li>
                 <li>
-                  <a href="#">Каталог</a>
+                  <a href="catalog.html">Каталог</a>
                 </li>
                 <li>
                   <a href="#">Доставка</a>
@@ -329,7 +326,7 @@
       <div class="main-footer-bottom">
         <div class="container">
           <section class="footer-copyright">
-            (c) 2010-2017 Компания "Техномарт"<br />
+            &copy; 2010&ndash;2017 Компания &laquo;Техномарт&raquo;<br />
             Все права защищены
           </section>
           <section class="footer-social">
@@ -342,7 +339,7 @@
             <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </section>
           <section class="footer-credits">
-            <p>Разработано —</p>
+            <p>Разработано &mdash;</p>
             <a href="https://htmlacademy.ru">htmlacademy.ru</a>
           </section>
         </div>

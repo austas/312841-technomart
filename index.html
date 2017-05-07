@@ -3,7 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
-    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&amp;subset=cyrillic" rel="stylesheet" />
+    <link href="css/normalize.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
   </head>
   <body>
     <header class="main-header">
@@ -12,10 +15,9 @@
           <div class="logo">
             <img src="img/logo/main-logo.png" alt="Логотип компании Техномарт" width="220" height="47" />
           </div>
-          <form class="search" action="#" method="post">
-            <label>
-              <input type="text" placeholder= "Поиск:" />
-            </label>
+          <form class="main-search" action="#" method="post">
+              <input id="main-search" type="search" placeholder="Поиск:" />
+              <label for="main-search"></label>
           </form>
           <a href="#" class="favorites">Закладки: 0</a>
           <a href="#" class="cart">Корзина: 0</a>
@@ -25,26 +27,30 @@
       <div class="main-header-middle">
         <div class="container clearfix">
           <div class="header-middle clearfix">
-            <em class="tagline">Интернет-магазин строительных материалов и инструментов для ремонта</em>
+            <em class="tagline">
+              Интернет-магазин<br />
+              строительных материалов<br />
+              и инструментов для ремонта
+            </em>
             <div class="main-contacts">
               <span class="phone">+7 (812) 555-05-55</span>
               <span class="main-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
             </div>
             <div class="user-block">
-              <a href="#" class="user-btn">Войти</a>
-              <a href="#" class="user-btn">Регистрация</a>
+              <a href="#" class="user-btn-signin">Войти</a>
+              <a href="#" class="user-btn-signup">Регистрация</a>
             </div>
           </div>
           <nav class="main-navigation clearfix">
             <ul>
               <li>
-                <a href="#">Главная</a>
+                <a href="index.html">Главная</a>
               </li>
               <li>
                 <a href="#">Компания</a>
               </li>
               <li>
-                <a href="#">Каталог</a>
+                <a href="catalog.html">Каталог</a>
               </li>
               <li>
                 <a href="#">Новости</a>
@@ -79,32 +85,32 @@
             <a href="#" class="category-btn">Для стройки</a>
           </div>
           <div class="slider">
-          	<input type="radio" id="btn-1" name="toggle" checked />
-          	<input type="radio" id="btn-2" name="toggle" />
-          	<div class="slider-controls">
-          		<label for="btn-1"></label>
-          		<label for="btn-2"></label>
-          	</div>
-          	<div class="arrows">
-          		<label for="btn-1"></label>
-          		<label for="btn-2"></label>
-          	</div>
-          	<div class="slides">
-          		<div class="slide">
-          			<div class="slide-text">
-          				<div class="slide-title">Перфораторы</div>
-                  <p>Настоящие мужские игрушки</p>
-          			</div>
-          			<a class="btn-slide btn" href="#">Открыть каталог</a>
-          		</div>
-          		<div class="slide">
-          			<div class="slide-text">
-          				<div class="slide-title">Дрели</div>
-          				<p>Соседям на радость!</p>
-          			</div>
-          			<a class="btn-slide btn" href="#">Открыть каталог</a>
-          		</div>
-          	</div>
+            <input type="radio" id="btn-1" name="toggle" checked />
+            <input type="radio" id="btn-2" name="toggle" />
+            <div class="slider-controls">
+              <label class="slider-btn1" for="btn-1"></label>
+              <label class="slider-btn2" for="btn-2"></label>
+            </div>
+            <div class="arrows">
+              <label for="btn-1"></label>
+              <label for="btn-2"></label>
+            </div>
+            <div class="slides">
+              <div class="slide">
+                <div class="slide-text">
+                  <div class="slide-title">Перфораторы</div>
+                  <p>Настроящие мужские игрушки</p>
+                </div>
+                <a class="btn-slide btn" href="#">Открыть каталог</a>
+              </div>
+              <div class="slide">
+                <div class="slide-text">
+                  <div class="slide-title">Дрели</div>
+                  <p>Соседям на радость!</p>
+                </div>
+                <a class="btn-slide btn" href="#">Открыть каталог</a>
+              </div>
+            </div>
           </div>
           <div class="category sales">
             <p>Скидки 50%</p>
@@ -206,41 +212,46 @@
       <div class="main-features">
         <div class="container clearfix">
           <h2 class="feature-header-title">Сервисы</h2>
-          <p>
-            Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
+          <p class="feature-header-text">
+            Хороший интернет-магазин отличается от плохого не только ценами!<br />
+            Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
           </p>
           <div class="top-features">
-            <input type="radio" id="feature-btn1" name="toggle" checked />
-            <input type="radio" id="feature-btn2" name="toggle" />
-            <input type="radio" id="feature-btn3" name="toggle" />
+            <input type="radio" id="feature-btn1" name="feature-toggle" checked />
+            <input type="radio" id="feature-btn2" name="feature-toggle" />
+            <input type="radio" id="feature-btn3" name="feature-toggle" />
             <div class="top-features-controls">
-              <label for="feature-btn1"></label>
-              <label for="feature-btn2"></label>
-              <label for="feature-btn3"></label>
+              <label for="feature-btn1">Доставка</label>
+              <label for="feature-btn2">Гарантия</label>
+              <label for="feature-btn3">Кредит</label>
             </div>
             <div class="top-features-slides">
               <div class="top-feature">
                 <div class="top-feature-title">Доставка</div>
                 <p>
-                  Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
-                  Ведь мы неплохо заработаем,
+                  Мы с удовольствием доставим ваш товар прямо<br />
+                  к вашему подъезду совершенно бесплатно!<br />
+                  Ведь мы неплохо заработаем,<br />
                   поднимая его на ваш этаж!
                 </p>
               </div>
               <div class="top-feature">
                 <div class="top-feature-title">Гарантия</div>
                 <p>
-                  Если купленный у нас товар поломается или заискрит,
-                  а также в случае пожара, спровоцированного его возгаранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.
+                  Если купленный у нас товар поломается или заискрит,<br />
+                  а также в случае пожара, спровоцированного его возгаранием,<br />
+                  вы всегда можете быть уверены в нашей гарантии. Мы обменяем<br />
+                  сгоревший товар на новый.<br />
                   Дом уж восстановите как-нибудь сами.
                 </p>
               </div>
               <div class="top-feature">
                 <div class="top-feature-title">Кредит</div>
                 <p>
-                  Залезть в долговую яму стало проще!
+                  Залезть в долговую яму стало проще!<br />
                   Кредитные консультанты придут вам на помощь.
                 </p>
+                <a href="#" class="btn">Отправить заявку</a>
               </div>
             </div>
           </div>
@@ -249,12 +260,15 @@
       <div class="main-about-us">
         <div class="container clearfix">
           <section class="about-us">
-            <h2 class="feature-header-title">Компания "Техномарт"</h2>
+            <h2 class="feature-header-title">
+              Компания &laquo;Техномарт&raquo;
+            </h2>
             <p>
               Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
             </p>
             <p>
-              Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными компаниями:
+              Мы можем доставить ваш товар в самые отдаленные точки России!<br />
+              Техномарт работает со многими транспортными компаниями:
             </p>
             <ul class="delivery-company">
               <li>Деловые линии</li>
@@ -266,7 +280,8 @@
           <section class="contacts">
             <h2 class="feature-header-title">Контакты</h2>
             <p>
-              Вы можете забрать товар сами, заехав в наш офис
+              Вы можете забрать товар сами,<br />
+              заехав в наш офис
             </p>
             <div class="map">
               <img src="img/map.jpg" alt="Карта - расположение офиса" />
@@ -292,7 +307,7 @@
                   <a href="#">Новости</a>
                 </li>
                 <li>
-                  <a href="#">Каталог</a>
+                  <a href="catalog.html">Каталог</a>
                 </li>
                 <li>
                   <a href="#">Доставка</a>
@@ -330,7 +345,7 @@
       <div class="main-footer-bottom">
         <div class="container">
           <section class="footer-copyright">
-            (c) 2010-2017 Компания "Техномарт"<br />
+            &copy; 2010&ndash;2017 Компания &laquo;Техномарт&raquo;<br />
             Все права защищены
           </section>
           <section class="footer-social">
@@ -343,7 +358,7 @@
             <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </section>
           <section class="footer-credits">
-            <p>Разработано:</p>
+            <p>Разработано &mdash;</p>
             <a href="https://htmlacademy.ru">htmlacademy.ru</a>
           </section>
         </div>
