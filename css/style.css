@@ -629,6 +629,14 @@ a.active {
 	background-position: -65px 0;
 }
 
+.brands-filter input:disabled + label {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.brands-filter input:disabled + label::before {
+  opacity: 0.3;
+}
+
 .power-type-filter input {
 	display: none;
 }
@@ -660,6 +668,14 @@ a.active {
 
 .power-type-filter input:checked + label::before {
 	background-position: -125px 0;
+}
+
+.power-type-filter input:disabled + label {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.power-type-filter input:disabled + label::before {
+  opacity: 0.3;
 }
 
 .submit-btn {
@@ -911,7 +927,7 @@ a.active {
 
 .main-footer-top {
   height: 193px;
-  background-color: #2f405c;
+  background-color: #32425c;
 }
 
 .main-footer-top a {
@@ -989,8 +1005,8 @@ a.active {
   float: left;
   width: 940px;
   height: 60px;
-  box-shadow: inset 0 -5px 0 #253148;
-  background-color: #2f405c;
+  box-shadow: inset 0 -5px 0 #293449;
+  background-color: #32425c;
   margin-bottom: 60px;
 }
 
@@ -1019,8 +1035,7 @@ a.active {
 }
 
 .main-navigation a:active {
-  opacity: 0.5;
-  color: #ffffff;
+  color: rgba(255, 255, 255, 0.5);
   background-color: #1d2739;
 }
 
