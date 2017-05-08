@@ -44,13 +44,13 @@
           <nav class="main-navigation clearfix">
             <ul>
               <li>
-                <a href="index.html">Главная</a>
+                <a href="#">Главная</a>
               </li>
               <li>
                 <a href="#">Компания</a>
               </li>
               <li>
-                <a href="catalog.html">Каталог</a>
+                <a href="#">Каталог</a>
               </li>
               <li>
                 <a href="#">Новости</a>
@@ -101,7 +101,7 @@
                   <div class="slide-title">Перфораторы</div>
                   <p>Настроящие мужские игрушки</p>
                 </div>
-                <a class="btn-slide btn" href="#">Открыть каталог</a>
+                <a class="btn-slide btn" href="catalog.html">Открыть каталог</a>
               </div>
               <div class="slide">
                 <div class="slide-text">
@@ -307,7 +307,7 @@
                   <a href="#">Новости</a>
                 </li>
                 <li>
-                  <a href="catalog.html">Каталог</a>
+                  <a href="#">Каталог</a>
                 </li>
                 <li>
                   <a href="#">Доставка</a>
@@ -364,5 +364,34 @@
         </div>
       </div>
     </footer>
+    <div class="modal-content-write-us invisible">
+      <button class="modal-content-close" type="button" title="Закрыть">
+        Закрыть
+      </button>
+      <form class="form-write-us clearfix" id="form-write-us" action="#" method="post">
+        <div class="write-us-name">
+          <label for="write-us-name">Ваше имя:</label>
+          <input id="write-us-name" type="text" placeholder="Представьтесь, пожалуйста" />
+        </div>
+        <div class="write-us-email">
+          <label for="write-us-email">Ваш e-mail:</label>
+          <input id="write-us-email" type="text" placeholder="Для отправки ответа" />
+        </div>
+        <div class="write-us-text">
+          <label for="write-us-text">Текст письма:</label>
+          <textarea id="write-us-text" type="textarea" placeholder="В свободной форме"></textarea>
+        </div>
+      </form>
+      <div class="write-us-submit-btn">
+      	<button class="write-us-submit btn" type="submit" form="form-write-us">Отправить</button>
+      </div>
+    </div>
+    <div class="modal-content-map invisible">
+      <button class="modal-content-close" type="button" title="Закрыть">
+        Закрыть
+      </button>
+      <div id="yandex-map"></div>
+    </div>
+    <div class="modal-overlay invisible"></div>
   </body>
 </html>
