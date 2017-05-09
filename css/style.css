@@ -2336,18 +2336,6 @@ article.new-item::after {
 	border: none;
 }
 
-.modal-overlay {
-  position: fixed;
-  z-index: 10;
-  top: 0;
-  left: 0;
-
-  width: 100%;
-  height: 100%;
-
-  background: rgba(0, 0, 0, 0.5);
-}
-
 .modal-content-add-to-cart {
   font-family: Cuprum, Candara, sans-serif;
   font-size: 30px;

@@ -5,7 +5,6 @@
   var writeUsPopup = document.querySelector('.modal-content-write-us');
   var mapBtn = document.querySelector('#map-btn');
   var map = document.querySelector('.modal-content-map');
-  var overlay = document.querySelector('.modal-overlay');
 
   var closeWriteUsPopup = writeUsPopup.querySelector('.modal-content-close');
   var formWriteUs = writeUsPopup.querySelector('form');
@@ -76,7 +75,6 @@
   var openMapHandler = function (evt) {
     evt.preventDefault();
     map.classList.remove('invisible');
-    overlay.classList.remove('invisible');
     closeMap.addEventListener('click', closeMapHandler);
     window.addEventListener('keydown', closeMapKeydownHandler);
   };
@@ -84,7 +82,6 @@
   var closeMapHandler = function (evt) {
     evt.preventDefault();
     map.classList.add('invisible');
-    overlay.classList.add('invisible');
   };
 
   var closeMapKeydownHandler = function (evt) {
