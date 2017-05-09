@@ -5,7 +5,7 @@
   var writeUsPopup = document.querySelector('.modal-content-write-us');
   var mapBtn = document.querySelector('#map-btn');
   var map = document.querySelector('.modal-content-map');
-	var overlay = document.querySelector('.modal-overlay');
+  var overlay = document.querySelector('.modal-overlay');
 
   var closeWriteUsPopup = writeUsPopup.querySelector('.modal-content-close');
   var formWriteUs = writeUsPopup.querySelector('form');
@@ -18,6 +18,8 @@
 
   var stgName = localStorage.getItem('name');
   var stgEmail = localStorage.getItem('e-mail');
+
+  var formData = [writeUsName, writeUsEmail, writeUsText];
 
   var openWriteUsHandler = function (evt) {
     evt.preventDefault();
@@ -48,10 +50,23 @@
     }
   };
 
+  var formChecker = function () {
+    formData.forEach(function (object) {
+      if (!object.value) {
+        object.placeholder = 'Обязательное поле!';
+        object.style = 'border: 2px solid #ee3643';
+      } else {
+        object.placeholder = object.value;
+        object.style = 'border: 2px solid #d7dcde';
+      }
+    });
+  };
+
   var submitWriteUsHandler = function (evt) {
     if (!writeUsName.value || !writeUsEmail.value || !writeUsText.value) {
       evt.preventDefault();
-      // alert('Пожалуйста, заполните обязательные поля!');
+      formWriteUs.addEventListener('change', formChecker);
+      formChecker();
     } else {
       localStorage.setItem('name', writeUsName.value);
       localStorage.setItem('e-mail', writeUsEmail.value);
@@ -61,7 +76,7 @@
   var openMapHandler = function (evt) {
     evt.preventDefault();
     map.classList.remove('invisible');
-		overlay.classList.remove('invisible');
+    overlay.classList.remove('invisible');
     closeMap.addEventListener('click', closeMapHandler);
     window.addEventListener('keydown', closeMapKeydownHandler);
   };
@@ -69,7 +84,7 @@
   var closeMapHandler = function (evt) {
     evt.preventDefault();
     map.classList.add('invisible');
-		overlay.classList.add('invisible');
+    overlay.classList.add('invisible');
   };
 
   var closeMapKeydownHandler = function (evt) {

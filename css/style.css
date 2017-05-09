@@ -2332,6 +2332,10 @@ article.new-item::after {
   box-shadow: 0 0 15px 1px rgba(35, 31, 32, 0.5);
 }
 
+.modal-content-map iframe {
+	border: none;
+}
+
 .modal-overlay {
   position: fixed;
   z-index: 10;
