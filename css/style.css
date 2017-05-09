@@ -2196,9 +2196,9 @@ article.new-item::after {
   font-weight: 400;
   line-height: 18px;
 
-  position: absolute;
+  position: fixed;
   z-index: 20;
-  top: 2735px;
+  top: 50%;
   left: 50%;
 
   width: 620px;
@@ -2318,10 +2318,10 @@ article.new-item::after {
 }
 
 .modal-content-map {
-  position: absolute;
+  position: fixed;
   z-index: 20;
-  top: 2571px;
-  left: 673px;
+  top: 50%;
+  left: 50%;
 
   width: 940px;
   height: 446px;
