@@ -434,6 +434,8 @@ a.active {
 .contacts .map {
   margin-top: 31px;
   margin-bottom: 32px;
+
+  cursor: pointer;
 }
 
 .delivery {
@@ -2316,10 +2318,10 @@ article.new-item::after {
 }
 
 .modal-content-map {
-  position: fixed;
+  position: absolute;
   z-index: 20;
-  top: 50%;
-  left: 50%;
+  top: 2571px;
+  left: 673px;
 
   width: 940px;
   height: 446px;
