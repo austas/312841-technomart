@@ -2038,8 +2038,6 @@ article.new-item::after {
   height: 20px;
 
   content: "";
-
-  background-color: red;
 }
 
 .user-exit::before {
