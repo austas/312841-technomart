@@ -230,7 +230,7 @@
                 <div class="top-feature-title">Доставка</div>
                 <p>
                   Мы с удовольствием доставим ваш товар прямо<br />
-                  к вашему подъезду совершенно бесплатно!<br />
+                  к вашему подъезду совершенно бесплатно!
                   Ведь мы неплохо заработаем,<br />
                   поднимая его на ваш этаж!
                 </p>
@@ -239,8 +239,8 @@
                 <div class="top-feature-title">Гарантия</div>
                 <p>
                   Если купленный у нас товар поломается или заискрит,<br />
-                  а также в случае пожара, спровоцированного его возгаранием,<br />
-                  вы всегда можете быть уверены в нашей гарантии. Мы обменяем<br />
+                  а также в случае пожара, спровоцированного его возгаранием,
+                  вы всегда можете быть уверены в нашей гарантии. Мы обменяем
                   сгоревший товар на новый.<br />
                   Дом уж восстановите как-нибудь сами.
                 </p>
@@ -284,9 +284,9 @@
               заехав в наш офис
             </p>
             <div class="map">
-              <img src="img/map.jpg" alt="Карта - расположение офиса" />
+              <img id="map-btn" src="img/map.jpg" alt="Карта - расположение офиса" />
             </div>
-            <a href="#" class="btn">Заблудились? Напишите нам!</a>
+            <a href="#" id="write-us" class="btn">Заблудились? Напишите нам!</a>
           </section>
         </div>
       </div>
@@ -359,7 +359,7 @@
           </section>
           <section class="footer-credits">
             <p>Разработано &mdash;</p>
-            <a href="https://htmlacademy.ru">htmlacademy.ru</a>
+            <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
           </section>
         </div>
       </div>
@@ -379,7 +379,7 @@
         </div>
         <div class="write-us-text">
           <label for="write-us-text">Текст письма:</label>
-          <textarea id="write-us-text" type="textarea" placeholder="В свободной форме"></textarea>
+          <textarea id="write-us-text" placeholder="В свободной форме"></textarea>
         </div>
       </form>
       <div class="write-us-submit-btn">
@@ -390,8 +390,9 @@
       <button class="modal-content-close" type="button" title="Закрыть">
         Закрыть
       </button>
-      <div id="yandex-map"></div>
+      <iframe src="https://api-maps.yandex.ru/frame/v1/-/C6qgBUMX" width="940" height="446"></iframe>
     </div>
-    <div class="modal-overlay invisible"></div>
+    <script src="js/main.js"></script>
+    <script src="js/utils.js"></script>
   </body>
 </html>
