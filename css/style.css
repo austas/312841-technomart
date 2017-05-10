@@ -659,7 +659,7 @@ a.active {
 
 .price-controls label {
   display: inline-block;
-	vertical-align: top;
+	vertical-align: baseline;
 
   text-align: center;
 }
