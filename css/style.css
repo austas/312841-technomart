@@ -1697,8 +1697,12 @@ article.new-item::after {
   color: #32425c;
 }
 
-.top-feature p {
-  width: 379px;
+.top-feature:first-child p {
+  width: 275px;
+}
+
+.top-feature:nth-child(2) p {
+	width: 375px;
 }
 
 .top-feature:first-child {

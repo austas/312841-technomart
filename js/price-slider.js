@@ -12,7 +12,7 @@
 
   var syncToggle = function (minCoord, maxCoord) {
 
-    var barWidth = ((maxCoord - minCoord) / 180) * 100;
+    var barWidth = (((maxCoord - minCoord) / 180) * 100) - 10;
 
     minToggle.style = 'left: ' + minCoord.toString() + 'px;';
     maxToggle.style = 'left: ' + maxCoord.toString() + 'px;';
