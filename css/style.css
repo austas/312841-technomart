@@ -660,6 +660,7 @@ a.active {
 
 .price-controls label {
   display: inline-block;
+	vertical-align: top;
 
   text-align: center;
 }
@@ -860,7 +861,7 @@ a.active {
   box-shadow: inset 0 -5px 0 rgba(0, 0, 0, 0.24);
 }
 
-.footer-logo a img:hover {
+.footer-logo img:hover {
   background-color: #ca2c37;
   box-shadow: inset 0 -5px 0 rgba(0, 0, 0, 0.24);
 }
@@ -881,6 +882,7 @@ a.active {
   font-size: 0;
 
   display: inline-block;
+	vertical-align: baseline;
 
   width: 41px;
   height: 41px;
@@ -1104,6 +1106,7 @@ a.active {
 
 .main-footer-top li {
   display: inline-block;
+	vertical-align: baseline;
 
   margin-right: 55px;
 
@@ -1190,6 +1193,7 @@ a.active {
 
 .main-navigation li {
   display: inline-block;
+	vertical-align: top;
 }
 
 .main-navigation a {
@@ -1251,7 +1255,7 @@ a.active {
   float: left;
 }
 
-#main-search {
+input[type="search"] {
   font-family: Cuprum, Candara, sans-serif;
   font-size: 17px;
   font-weight: 400;
@@ -1266,7 +1270,7 @@ a.active {
   background: none;
 }
 
-#main-search ~ label::before {
+input[type="search"] ~ label::before {
   position: absolute;
   top: 12px;
   left: 17px;
@@ -1281,21 +1285,21 @@ a.active {
   background-position: -285px 0;
 }
 
-#main-search:hover {
+input[type="search"]:hover {
   opacity: 1;
   background-color: #212a3a;
 }
 
-#main-search:hover ~ label::before {
+input[type="search"]:hover ~ label::before {
   opacity: 1;
 }
 
-#main-search:focus {
+input[type="search"]:focus {
   color: #000000;
   background-color: #ffffff;
 }
 
-#main-search:focus ~ label::before {
+input[type="search"]:focus ~ label::before {
   opacity: 1;
   background-position: -305px 0;
 }
@@ -1356,6 +1360,7 @@ article.new-item::after {
 
 .pagination a {
   display: inline-block;
+	vertical-align: top;
 
   width: 22px;
   height: 22px;
@@ -1820,6 +1825,8 @@ article.new-item::after {
 
   width: 620px;
   height: 266px;
+
+	background-color: #908681;
 }
 
 .arrows {
@@ -2095,6 +2102,7 @@ article.new-item::after {
   font-weight: 400;
 
   display: inline-block;
+	vertical-align: middle;
 
   margin-right: 10px;
   margin-left: 17px;
@@ -2432,6 +2440,7 @@ article.new-item::after {
   font-size: 14px;
 
   display: inline-block;
+	vertical-align: top;
 
   width: 201px;
   margin: 0;
@@ -2445,34 +2454,38 @@ article.new-item::after {
   background-color: #ffffff;
 }
 
-#main-search::-webkit-input-placeholder {
+input[type="search"]::-webkit-input-placeholder {
   color: #ffffff;
 }
 
-#main-search::-moz-placeholder {
+input[type="search"]::-moz-placeholder {
   color: #ffffff;
 }
 
-#main-search:-moz-placeholder {
+input[type="search"]:-moz-placeholder {
   color: #ffffff;
 }
 
-#main-search:-ms-input-placeholder {
+input[type="search"]:-ms-input-placeholder {
   color: #ffffff;
 }
 
-#form-write-us::-webkit-input-placeholder {
+.form-write-us input::-webkit-input-placeholder,
+.form-write-us textarea::-webkit-input-placeholder {
   color: #999999;
 }
 
-#form-write-us::-moz-placeholder {
+.form-write-us input::-moz-placeholder,
+.form-write-us textarea::-webkit-input-placeholder {
   color: #999999;
 }
 
-#form-write-us:-moz-placeholder {
+.form-write-us input:-moz-placeholder,
+.form-write-us textarea::-webkit-input-placeholder {
   color: #999999;
 }
 
-#form-write-us:-ms-input-placeholder {
+.form-write-us input:-ms-input-placeholder,
+.form-write-us textarea::-webkit-input-placeholder {
   color: #999999;
 }
