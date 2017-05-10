@@ -434,8 +434,6 @@ a.active {
 .contacts .map {
   margin-top: 31px;
   margin-bottom: 32px;
-
-  cursor: pointer;
 }
 
 .delivery {
@@ -2474,6 +2472,12 @@ article.new-item::after {
 
   -webkit-animation: appear 0.1s ease-out;
           animation: appear 0.1s ease-out;
+}
+
+.fixed {
+	position: relative;
+	top: 140px;
+	margin-bottom: 60px;
 }
 
 .add-to-cart-top {

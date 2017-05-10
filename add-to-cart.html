@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Техномарт - Каталог</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&amp;subset=cyrillic" rel="stylesheet" />
+    <link href="css/normalize.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="main-header-top">
+        <div class="container clearfix">
+          <div class="logo">
+            <a href="index.html">
+              <img src="img/logo/main-logo.png" alt="Логотип компании Техномарт" width="220" height="47" />
+            </a>
+          </div>
+         <form class="main-search" action="#" method="post">
+              <input id="main-search" type="search" placeholder="Поиск:" />
+              <label for="main-search"></label>
+          </form>
+          <a href="#" class="favorites">Закладки: 0</a>
+          <a href="#" class="cart cart-full">Корзина: 10</a>
+          <a href="#" class="checkout">Оформить заказ</a>
+        </div>
+      </div>
+      <div class="main-header-middle">
+        <div class="container clearfix">
+          <div class="header-middle clearfix">
+            <em class="tagline">
+              Интернет-магазин<br />
+              строительных материалов<br />
+              и инструментов для ремонта
+            </em>
+            <div class="main-contacts">
+              <span class="phone">+7 (812) 555-05-55</span>
+              <span class="main-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
+            </div>
+            <div class="user-block-signin">
+              <a href="#" class="user-name">Равшан Джамшутович</a>
+              <a href="#" class="user-exit">Выйти</a>
+              <div class="user-block-menu">
+                <a href="#">Мои заказы</a>
+                <a href="#">Личный кабинет</a>
+              </div>
+            </div>
+          </div>
+          <nav class="main-navigation clearfix">
+            <ul>
+              <li>
+                <a href="index.html">Главная</a>
+              </li>
+              <li>
+                <a href="#">Компания</a>
+              </li>
+              <li>
+                <a href="#">Каталог</a>
+              </li>
+              <li>
+                <a href="#">Новости</a>
+              </li>
+              <li>
+                <a href="#">Спецпредложения</a>
+              </li>
+              <li>
+                <a href="#">Доставка</a>
+              </li>
+              <li>
+                <a href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main class="container clearfix">
+      <div class="breadcrumbs">
+        <a href="index.html">Главная</a>
+        <a href="#">Корзина</a>
+        <a>Товар добавлен!</a>
+      </div>
+      <h1 class="catalog-header">Корзина</h1>
+      <div class="modal-content-add-to-cart fixed">
+        <button class="modal-content-close" type="button" title="Закрыть">
+          Закрыть
+        </button>
+        <div class="add-to-cart-top">
+          <p>Товар добавлен в корзину!</p>
+        </div>
+        <div class="add-to-cart-bottom">
+          <a href="#" class="btn">Оформить заказ</a>
+          <a href="#" class="btn">Продолжить покупки</a>
+        </div>
+      </div>
+    </main>
+    <footer class="main-footer">
+      <div class="main-footer-top">
+        <div class="container">
+          <div class="footer-top clearfix">
+            <div class="footer-logo">
+              <a href="index.html">
+                <img src="img/logo/footer-logo.png" alt="Логотип компании Техномарт" width="220" height="68" />
+              </a>
+            </div>
+            <nav class="footer-navigation-top">
+              <ul>
+                <li>
+                  <a href="#">Компания</a>
+                </li>
+                <li>
+                  <a href="#">Новости</a>
+                </li>
+                <li>
+                  <a href="#">Каталог</a>
+                </li>
+                <li>
+                  <a href="#">Доставка</a>
+                </li>
+                <li>
+                  <a href="#">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="footer-bottom">
+            <span class="address">
+              г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br />
+              +7 (812) 555-05-55
+            </span>
+            <nav class="footer-navigation-bottom">
+              <ul>
+                <li>
+                  <a href="#">Материалы</a>
+                </li>
+                <li>
+                  <a href="#">Техника</a>
+                </li>
+                <li>
+                  <a href="#">Инструмент</a>
+                </li>
+                <li>
+                  <a href="#">Спецпредложения</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="main-footer-bottom">
+        <div class="container">
+          <section class="footer-copyright">
+            &copy; 2010&ndash;2017 Компания &laquo;Техномарт&raquo;<br />
+            Все права защищены
+          </section>
+          <section class="footer-social">
+            <a href="#" class="social-btn social-btn-vk">Вконтакте</a>
+            <a href="#" class="social-btn social-btn-fb">Фейсбук</a>
+            <a href="#" class="social-btn social-btn-ig">Инстаграм</a>
+          </section>
+          <section class="footer-mailto">
+            <p>Обратная связь:</p>
+            <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </section>
+          <section class="footer-credits">
+            <p>Разработано &mdash;</p>
+            <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+          </section>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
