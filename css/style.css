@@ -1256,8 +1256,12 @@ a.active {
 
 .main-search {
   position: relative;
+	height: 42px;
 
   float: left;
+
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 }
 
 input[type="search"] {
@@ -1267,12 +1271,17 @@ input[type="search"] {
   line-height: 18px;
 
   width: 270px;
-  padding: 12px;
+	height: 100%;
+  padding: 11px;
   padding-left: 48px;
+	padding-bottom: 12px;
 
   color: #ffffff;
   border: none;
   background: none;
+
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 }
 
 input[type="search"] ~ label::before {
@@ -1300,6 +1309,7 @@ input[type="search"]:hover ~ label::before {
 }
 
 input[type="search"]:focus {
+	outline: none;
   color: #000000;
   background-color: #ffffff;
 }
@@ -1358,9 +1368,10 @@ article.new-item::after {
 
 .pagination {
   float: left;
+	clear: both;
 
-  margin-top: 32px;
-  margin-bottom: 34px;
+  margin-top: 30px;
+  margin-bottom: 35px;
 }
 
 .pagination a {
@@ -1406,7 +1417,7 @@ article.new-item::after {
   float: left;
 
   width: 218px;
-  height: 316px;
+  min-height: 316px;
 
   border: 1px solid #e5e5e5;
   background-color: #ffffff;
@@ -1429,6 +1440,8 @@ article.new-item::after {
   display: block;
 
   margin-top: 3px;
+	margin-bottom: -6px;
+	padding: 0 25px;
 
   text-align: center;
 
@@ -1440,30 +1453,41 @@ article.new-item::after {
   font-weight: 700;
   line-height: 18px;
 
-  margin-top: 11px;
+	display: block;
+
   margin-left: 4px;
+	margin-bottom: 8px;
 
   text-align: center;
   text-transform: uppercase;
 }
 
+.catalog-items .product-item:nth-child(3n+1) {
+	clear: both;
+}
+
 .product-item .price {
+	margin-bottom: -7px;
+
   text-decoration: line-through;
 
   color: #999999;
 }
 
 .product-item .price-now {
-  position: absolute;
-  bottom: -7px;
-  left: 37px;
+	position: relative;
 
   width: 141px;
-  height: 38px;
+  min-height: 38px;
+	margin-left: 41px;
   padding-top: 10px;
 
   color: #ffffff;
   background: url("../img/icons/price-label.png") no-repeat;
+}
+
+.product-item .no-price {
+	margin-bottom: 38px;
 }
 
 .item-hover {
