@@ -1256,8 +1256,12 @@ a.active {
 
 .main-search {
   position: relative;
+	height: 42px;
 
   float: left;
+
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 }
 
 input[type="search"] {
@@ -1267,12 +1271,17 @@ input[type="search"] {
   line-height: 18px;
 
   width: 270px;
-  padding: 12px;
+	height: 100%;
+  padding: 11px;
   padding-left: 48px;
+	padding-bottom: 12px;
 
   color: #ffffff;
   border: none;
   background: none;
+
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 }
 
 input[type="search"] ~ label::before {
@@ -1300,6 +1309,7 @@ input[type="search"]:hover ~ label::before {
 }
 
 input[type="search"]:focus {
+	outline: none;
   color: #000000;
   background-color: #ffffff;
 }
