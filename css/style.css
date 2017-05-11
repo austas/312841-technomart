@@ -883,10 +883,11 @@ a.active {
   font-size: 0;
 
   display: inline-block;
-	vertical-align: baseline;
+	vertical-align: top;
 
   width: 41px;
   height: 41px;
+	margin-top: 5px;
 
   border-radius: 50%;
   background-color: #212a3a;
@@ -1067,7 +1068,7 @@ a.active {
 .main-contacts {
   float: left;
 
-  width: 270px;
+  width: 271px;
   margin-top: 10px;
 }
 
@@ -1672,17 +1673,17 @@ article.new-item::after {
   margin-top: 30px;
 }
 
-#feature-btn1:checked ~ .top-features-controls label:first-child {
+input[name="feature-toggle"]:first-child:checked ~ .top-features-controls label:first-child {
   color: #32425c;
   background-color: #ffffff;
 }
 
-#feature-btn2:checked ~ .top-features-controls label:nth-child(2) {
+input[name="feature-toggle"]:nth-child(2):checked ~ .top-features-controls label:nth-child(2) {
   color: #32425c;
   background-color: #ffffff;
 }
 
-#feature-btn3:checked ~ .top-features-controls label:last-child {
+input[name="feature-toggle"]:nth-child(3):checked ~ .top-features-controls label:last-child {
   color: #32425c;
   background-color: #ffffff;
   -webkit-box-shadow: inset 0 -1px 0 white;
@@ -1822,11 +1823,11 @@ article.new-item::after {
   background: #ff5257;
 }
 
-#btn-1:checked ~ .slider-controls::after {
+input[name="toggle"]:first-child:checked ~ .slider-controls::after {
   z-index: 2;
 }
 
-#btn-2:checked ~ .slider-controls::after {
+input[name="toggle"]:nth-child(2):checked ~ .slider-controls::after {
   z-index: 2;
   left: 320px;
 }
@@ -2133,55 +2134,55 @@ article.new-item::after {
   color: rgba(0, 0, 0, 0.3);
 }
 
-#btn-1:checked ~ .slides .slide:nth-child(1) {
+input[name="toggle"]:first-child:checked ~ .slides .slide:nth-child(1) {
   margin-left: 0;
 }
 
-#btn-1:checked ~ .slides .slide:nth-child(2) {
+input[name="toggle"]:first-child:checked ~ .slides .slide:nth-child(2) {
   margin-left: 660px;
 }
 
-#btn-2:checked ~ .slides .slide:nth-child(1) {
+input[name="toggle"]:nth-child(2):checked ~ .slides .slide:nth-child(1) {
   margin-left: -660px;
 }
 
-#btn-2:checked ~ .slides .slide:nth-child(2) {
+input[name="toggle"]:nth-child(2):checked ~ .slides .slide:nth-child(2) {
   margin-left: 0;
 }
 
-#feature-btn1:checked ~ .top-features-slides .top-feature:nth-child(1) {
+input[name="feature-toggle"]:first-child:checked ~ .top-features-slides .top-feature:nth-child(1) {
   margin-left: 0;
 }
 
-#feature-btn1:checked ~ .top-features-slides .top-feature:nth-child(2) {
+input[name="feature-toggle"]:first-child:checked ~ .top-features-slides .top-feature:nth-child(2) {
   margin-left: 660px;
 }
 
-#feature-btn1:checked ~ .top-features-slides .top-feature:nth-child(3) {
+input[name="feature-toggle"]:first-child:checked ~ .top-features-slides .top-feature:nth-child(3) {
   margin-left: 1220px;
 }
 
-#feature-btn2:checked ~ .top-features-slides .top-feature:nth-child(1) {
+input[name="feature-toggle"]:nth-child(2):checked ~ .top-features-slides .top-feature:nth-child(1) {
   margin-left: -660px;
 }
 
-#feature-btn2:checked ~ .top-features-slides .top-feature:nth-child(2) {
+input[name="feature-toggle"]:nth-child(2):checked ~ .top-features-slides .top-feature:nth-child(2) {
   margin-left: 0;
 }
 
-#feature-btn2:checked ~ .top-features-slides .top-feature:nth-child(3) {
+input[name="feature-toggle"]:nth-child(2):checked ~ .top-features-slides .top-feature:nth-child(3) {
   margin-left: 660px;
 }
 
-#feature-btn3:checked ~ .top-features-slides .top-feature:nth-child(1) {
+input[name="feature-toggle"]:nth-child(3):checked ~ .top-features-slides .top-feature:nth-child(1) {
   margin-left: -1220px;
 }
 
-#feature-btn3:checked ~ .top-features-slides .top-feature:nth-child(2) {
+input[name="feature-toggle"]:nth-child(3):checked ~ .top-features-slides .top-feature:nth-child(2) {
   margin-left: -660px;
 }
 
-#feature-btn3:checked ~ .top-features-slides .top-feature:nth-child(3) {
+input[name="feature-toggle"]:nth-child(3):checked ~ .top-features-slides .top-feature:nth-child(3) {
   margin-left: 0;
 }
 
@@ -2413,7 +2414,6 @@ article.new-item::after {
   height: 446px;
 
   -webkit-transform: translate(-50%, -50%);
-
           transform: translate(-50%, -50%);
 
   background: url("../img/big-map.png") no-repeat;
